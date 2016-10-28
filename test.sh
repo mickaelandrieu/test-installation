@@ -3,7 +3,6 @@
 #
 # ./test.sh "test-install" "http://projects.dev/test-install"
 #
-#
 
 # Stop on failure
 set -e
@@ -35,4 +34,4 @@ mv prestashop_1.7.0.0-RC.3 $DESTINATION
 cd $DESTINATION
 
 # Launch unzipping
-firefox $HOST
+firefox --private-window $HOST
